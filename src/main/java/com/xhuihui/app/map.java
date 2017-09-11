@@ -38,7 +38,7 @@ public class map {
         URLConnection connect = url.openConnection();
         BufferedReader br = new BufferedReader(new InputStreamReader(connect.getInputStream()));
         JSONObject zh = JSONObject.fromObject(br.readLine());
-        JSONObject districts = zh.optJSONObject("districts");
+        JSONArray districts = zh.optJSONArray("districts");
         return null;
     }
 

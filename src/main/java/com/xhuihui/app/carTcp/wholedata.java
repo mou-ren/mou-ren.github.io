@@ -10,14 +10,14 @@ public class wholedata {
 	String  start="2323";  //起始符
 	String  command="02";  //命令标识---实时数据
     String  answer="fe";  //应答标识
-	String  vin="LGBH12E2XEY207941";  //识别码
+	String  vin="LA888M1E0GKLW0460";  //识别码
 //	String  vin="LGBH12E2XEY207941";  //识别码
 	String  encrypttype="01";  //加密方式  1byte
 	
 	String  head=start+command+answer+stringto16.stringto16(vin)+encrypttype;
 	//数据长度lenstr  2byte
 	//-----------------------------------数据单元-----------------------------------
-	String  time="170811104700";  //数据采集时间
+	String  time="170911143700";  //数据采集时间
     System.out.print("时间："+time);
 
 	//----------------------------------整车数据------------------------------------
@@ -137,8 +137,8 @@ public class wholedata {
 											    //Bit2——0： 东经； 1： 西经
 											    //Bit3~7——保留
 
-    String longitude="06eef494";    //经度    4byte
-    String latitude="0261b590";     //纬度    4byte
+    String longitude="06f08211";    //经度    4byte
+    String latitude="0260e764";     //纬度    4byte
 
 /*    String longitude="06eef094";    //经度    4byte
     String latitude="0261b590";     //纬度    4byte*/
